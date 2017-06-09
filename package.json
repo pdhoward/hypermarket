@@ -1,6 +1,6 @@
 {
   "name": "hypermarket",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Communities of agents making markets through conversational commerce",
   "main": "server.js",
   "scripts": {
