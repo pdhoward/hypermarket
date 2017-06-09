@@ -1,120 +1,30 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Users\\Patrick\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'unpublish',
-1 verbose cli   'hypermarket@0.0.1',
-1 verbose cli   '--force' ]
+1 verbose cli   'version',
+1 verbose cli   '0.0.3' ]
 2 info using npm@3.10.9
 3 info using node@v6.9.1
-4 warn using --force I sure hope you know what you are doing.
-5 silly unpublish args[0] hypermarket@0.0.1
-6 silly unpublish thing Result {
-6 silly unpublish   raw: 'hypermarket@0.0.1',
-6 silly unpublish   scope: null,
-6 silly unpublish   escapedName: 'hypermarket',
-6 silly unpublish   name: 'hypermarket',
-6 silly unpublish   rawSpec: '0.0.1',
-6 silly unpublish   spec: '0.0.1',
-6 silly unpublish   type: 'version' }
-7 verbose getPublishConfig null
-8 silly ls normalized hypermarket\0.0.1
-9 silly gentlyRm C:\Users\Patrick\AppData\Roaming\npm-cache\hypermarket\0.0.1 is being purged
-10 verbose gentlyRm don't care about contents; nuking C:\Users\Patrick\AppData\Roaming\npm-cache\hypermarket\0.0.1
-11 silly mapToRegistry name hypermarket
-12 silly mapToRegistry using default registry
-13 silly mapToRegistry registry https://registry.npmjs.org/
-14 silly mapToRegistry data Result {
-14 silly mapToRegistry   raw: 'hypermarket',
-14 silly mapToRegistry   scope: null,
-14 silly mapToRegistry   escapedName: 'hypermarket',
-14 silly mapToRegistry   name: 'hypermarket',
-14 silly mapToRegistry   rawSpec: '',
-14 silly mapToRegistry   spec: 'latest',
-14 silly mapToRegistry   type: 'tag' }
-15 silly mapToRegistry uri https://registry.npmjs.org/hypermarket
-16 verbose get GET as part of write; not caching result
-17 verbose request uri https://registry.npmjs.org/hypermarket?write=true
-18 verbose request no auth needed
-19 info attempt registry request try #1 at 9:46:08 AM
-20 verbose request using bearer token for auth
-21 verbose request id 3fc595d381a1ce3f
-22 http request GET https://registry.npmjs.org/hypermarket?write=true
-23 http 200 https://registry.npmjs.org/hypermarket?write=true
-24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-24 verbose headers   'content-type': 'application/json',
-24 verbose headers   etag: '"593aa5fc-855"',
-24 verbose headers   'content-encoding': 'gzip',
-24 verbose headers   'cache-control': 'max-age=0',
-24 verbose headers   'transfer-encoding': 'chunked',
-24 verbose headers   'accept-ranges': 'bytes',
-24 verbose headers   date: 'Fri, 09 Jun 2017 13:46:06 GMT',
-24 verbose headers   via: '1.1 varnish',
-24 verbose headers   connection: 'keep-alive',
-24 verbose headers   'x-served-by': 'cache-iad2143-IAD',
-24 verbose headers   'x-cache': 'MISS',
-24 verbose headers   'x-cache-hits': '0',
-24 verbose headers   'x-timer': 'S1497015966.221488,VS0,VE21',
-24 verbose headers   vary: 'Accept-Encoding' }
-25 silly get cb [ 200,
-25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-25 silly get     'content-type': 'application/json',
-25 silly get     etag: '"593aa5fc-855"',
-25 silly get     'content-encoding': 'gzip',
-25 silly get     'cache-control': 'max-age=0',
-25 silly get     'transfer-encoding': 'chunked',
-25 silly get     'accept-ranges': 'bytes',
-25 silly get     date: 'Fri, 09 Jun 2017 13:46:06 GMT',
-25 silly get     via: '1.1 varnish',
-25 silly get     connection: 'keep-alive',
-25 silly get     'x-served-by': 'cache-iad2143-IAD',
-25 silly get     'x-cache': 'MISS',
-25 silly get     'x-cache-hits': '0',
-25 silly get     'x-timer': 'S1497015966.221488,VS0,VE21',
-25 silly get     vary: 'Accept-Encoding' } ]
-26 verbose get saving hypermarket to C:\Users\Patrick\AppData\Roaming\npm-cache\registry.npmjs.org\hypermarket_3Fwrite_3Dtrue\.cache.json
-27 verbose correctMkdir C:\Users\Patrick\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-28 verbose unpublish removing attachments { shasum: '618f09ef2e584aa7039dba38f0d94923e74daf75',
-28 verbose unpublish   tarball: 'https://registry.npmjs.org/hypermarket/-/hypermarket-0.0.1.tgz' }
-29 info unpublish No versions remain, removing entire package
-30 verbose request uri https://registry.npmjs.org/hypermarket/-rev/3-4c001fab80e5d9e681fc74e96dd2329e
-31 verbose request sending authorization for write operation
-32 info attempt registry request try #1 at 9:46:08 AM
-33 verbose request using bearer token for auth
-34 http request DELETE https://registry.npmjs.org/hypermarket/-rev/3-4c001fab80e5d9e681fc74e96dd2329e
-35 http 400 https://registry.npmjs.org/hypermarket/-rev/3-4c001fab80e5d9e681fc74e96dd2329e
-36 verbose headers { 'content-type': 'application/json',
-36 verbose headers   'cache-control': 'max-age=300',
-36 verbose headers   'content-length': '17',
-36 verbose headers   'accept-ranges': 'bytes',
-36 verbose headers   date: 'Fri, 09 Jun 2017 13:46:06 GMT',
-36 verbose headers   via: '1.1 varnish',
-36 verbose headers   connection: 'keep-alive',
-36 verbose headers   'x-served-by': 'cache-iad2143-IAD',
-36 verbose headers   'x-cache': 'MISS',
-36 verbose headers   'x-cache-hits': '0',
-36 verbose headers   'x-timer': 'S1497015966.361265,VS0,VE446',
-36 verbose headers   vary: 'Accept-Encoding' }
-37 verbose request invalidating C:\Users\Patrick\AppData\Roaming\npm-cache\registry.npmjs.org\hypermarket on DELETE
-38 verbose stack Error: Registry returned 400 for DELETE on https://registry.npmjs.org/hypermarket/-rev/3-4c001fab80e5d9e681fc74e96dd2329e
-38 verbose stack     at makeError (C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-38 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:280:14)
-38 verbose stack     at Request._callback (C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-38 verbose stack     at Request.self.callback (C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:187:22)
-38 verbose stack     at emitTwo (events.js:106:13)
-38 verbose stack     at Request.emit (events.js:191:7)
-38 verbose stack     at Request.<anonymous> (C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1048:10)
-38 verbose stack     at emitOne (events.js:96:13)
-38 verbose stack     at Request.emit (events.js:188:7)
-38 verbose stack     at IncomingMessage.<anonymous> (C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:969:12)
-39 verbose statusCode 400
-40 verbose pkgid hypermarket
-41 verbose cwd C:\Users\Patrick\Desktop\hypermarket
-42 error Windows_NT 10.0.15063
-43 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Patrick\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "unpublish" "hypermarket@0.0.1" "--force"
-44 error node v6.9.1
-45 error npm  v3.10.9
-46 error code E400
-47 error Registry returned 400 for DELETE on https://registry.npmjs.org/hypermarket/-rev/3-4c001fab80e5d9e681fc74e96dd2329e
-48 error If you need help, you may report this error at:
-48 error     <https://github.com/npm/npm/issues>
-49 verbose exit [ 1, true ]
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack D npm-debug.log
+5 verbose stack     at C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\lib\version.js:247:19
+5 verbose stack     at C:\Users\Patrick\AppData\Roaming\npm\node_modules\npm\lib\utils\no-progress-while-running.js:21:8
+5 verbose stack     at ChildProcess.exithandler (child_process.js:197:7)
+5 verbose stack     at emitTwo (events.js:106:13)
+5 verbose stack     at ChildProcess.emit (events.js:191:7)
+5 verbose stack     at maybeClose (internal/child_process.js:877:16)
+5 verbose stack     at Socket.<anonymous> (internal/child_process.js:334:11)
+5 verbose stack     at emitOne (events.js:96:13)
+5 verbose stack     at Socket.emit (events.js:188:7)
+5 verbose stack     at Pipe._handle.close [as _onclose] (net.js:498:12)
+6 verbose cwd C:\Users\Patrick\Desktop\hypermarket
+7 error Windows_NT 10.0.15063
+8 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Patrick\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "version" "0.0.3"
+9 error node v6.9.1
+10 error npm  v3.10.9
+11 error Git working directory not clean.
+11 error D npm-debug.log
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
