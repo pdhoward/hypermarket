@@ -1,5 +1,5 @@
 
 
 
-#                             STEALTH MODE
-#                             COMING SOON
+#                             Connecting businesses with the 
+#                             Conversational Economy
